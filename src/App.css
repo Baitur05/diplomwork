@@ -11,6 +11,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
 }
+span {
+  cursor: pointer;
+}
 .background {
   background: #f6f9fc;
   padding: 50px 0;

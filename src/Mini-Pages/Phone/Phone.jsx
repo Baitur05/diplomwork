@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./style.css";
 
-const ShopCart = ({ shopItems, addToCart }) => {
+const Phone = ({ shopItems, addToCart }) => {
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
@@ -33,9 +34,6 @@ const ShopCart = ({ shopItems, addToCart }) => {
                 </div>
                 <div className="price">
                   <h4>{shopItems.price}с </h4>
-                  {/* step : 3  
-                     if hami le button ma click garryo bahne 
-                    */}
                   <button onClick={() => addToCart(shopItems)}>
                     <i className="fa fa-plus"></i>
                   </button>
@@ -48,5 +46,4 @@ const ShopCart = ({ shopItems, addToCart }) => {
     </>
   );
 };
-
-export default ShopCart;
+export default Phone;

@@ -1,7 +1,12 @@
 import React from "react";
+import Home from "../components/MainPage/Home";
 
-const Page = () => {
-  return <div>Page</div>;
+const Page = ({ CartItem }) => {
+  return (
+    <div>
+      <Home CartItem={CartItem} />
+    </div>
+  );
 };
 
 export default Page;

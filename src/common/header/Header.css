@@ -7,9 +7,17 @@
 .head i {
   margin-right: 10px;
 }
+.head ul {
+  margin-right: 30px;
+  font-size: 13px;
+  color: white;
+}
 .head label {
   margin-right: 30px;
   font-size: 13px;
+}
+li {
+  padding: 0 10px;
 }
 /*------head-----------*/
 /*------search-----------*/

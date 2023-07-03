@@ -2,7 +2,7 @@ import React from "react";
 import Cart from "./Cart";
 import "./style.css";
 
-const NewArrivals = () => {
+const NewArrivals = ({ isAllShow, setAllShow }) => {
   return (
     <>
       <section className="NewArrivals background">
@@ -13,11 +13,17 @@ const NewArrivals = () => {
               <h2>Жаңы келгендер</h2>
             </div>
             <div className="heading-right row ">
-              <span>Баарын көрүү</span>
+              <span
+                onClick={() =>
+                  isAllShow ? setAllShow(false) : setAllShow(true)
+                }
+              >
+                {isAllShow ? "Азыраак көрүү" : "Баарын көрүү"}
+              </span>
               <i className="fa-solid fa-caret-right"></i>
             </div>
           </div>
-          <Cart />
+          <Cart isAllShow={isAllShow} setAllShow={setAllShow} />
         </div>
       </section>
     </>

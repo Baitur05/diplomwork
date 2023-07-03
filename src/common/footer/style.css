@@ -1,6 +1,6 @@
 footer {
   background-color: #0f3460;
-  padding: 100px 0;
+  padding: 50px 0;
   color: #fff;
 }
 footer h1 {
@@ -11,7 +11,7 @@ footer h1 {
 }
 footer .img {
   background-color: #0c2a4d;
-  padding: 15px 20px;
+  padding: 15px 15px;
   border-radius: 5px;
 }
 footer .img i {
@@ -33,4 +33,7 @@ footer h2 {
 footer li {
   margin-bottom: 10px;
   opacity: 0.5;
+}
+span {
+  font-size: 13px;
 }
